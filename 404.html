@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found | Ahmed Adel</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#06090F">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/style.css">
+<style>
+  body { min-height: 100vh; min-height: 100svh; display: grid; place-items: center; overflow: hidden; }
+  .nf { position: relative; isolation: isolate; width: 100%; min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px 20px; }
+  .nf__bg { position: absolute; inset: 0; z-index: -2; background: radial-gradient(55% 50% at 50% 45%, rgba(46,230,220,.14), transparent 70%), var(--bg); }
+  .nf__grid { position: absolute; inset: 0; z-index: -2; opacity: .5; background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size: 80px 80px; background-position: center; mask-image: radial-gradient(60% 55% at 50% 45%, #000 20%, transparent 75%); -webkit-mask-image: radial-gradient(60% 55% at 50% 45%, #000 20%, transparent 75%); }
+  .nf__brand { position: absolute; top: 24px; left: 50%; transform: translateX(-50%); }
+  .nf__stage { position: relative; display: grid; place-items: center; margin-bottom: 18px; }
+  .nf__code { font-size: clamp(130px, 28vw, 340px); line-height: .85; font-weight: 900; letter-spacing: -.06em; direction: ltr;
+    background: linear-gradient(180deg, #D6DDE3 10%, rgba(214,221,227,.45) 55%, rgba(214,221,227,.03) 95%); -webkit-background-clip: text; background-clip: text; color: transparent; user-select: none; }
+  .nf__emblem { position: absolute; z-index: -1; width: clamp(220px, 34vw, 440px); aspect-ratio: 1; opacity: .25; }
+  .nf__emblem svg { width: 100%; height: 100%; overflow: visible; animation: spin 40s linear infinite; filter: drop-shadow(0 0 16px rgba(46,230,220,.55)); }
+  .nf h1 { margin: 0; font-size: clamp(26px, 3.4vw, 42px); font-weight: 900; letter-spacing: -.02em; line-height: 1.2; }
+  .nf p { margin: 12px auto 0; max-width: 480px; color: var(--muted); font-size: 17px; }
+  .nf__ar { margin-top: 26px; padding-top: 22px; border-top: 1px solid var(--line); width: min(480px, 100%); direction: rtl; }
+  .nf__ar h2 { margin: 0; font-size: clamp(22px, 2.6vw, 30px); font-weight: 900; line-height: 1.5; }
+  .nf__ar p { margin-top: 4px; }
+  .nf__cta { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+</style>
+</head>
+<body>
+<main class="nf">
+  <div class="nf__bg" aria-hidden="true"></div>
+  <div class="nf__grid" aria-hidden="true"></div>
+
+  <a class="brand nf__brand" href="/" aria-label="Ahmed Adel">
+    <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
+    <span>Ahmed <b>Adel</b></span>
+  </a>
+
+  <div class="nf__stage">
+    <div class="nf__emblem" aria-hidden="true">
+      <svg viewBox="0 0 100 100" fill="none">
+        <path d="M33.1 13.75 A40 40 0 0 1 84.64 70" stroke="#2EE6DC" stroke-width="1.4" stroke-linecap="round"/>
+        <path d="M11.36 39.6 A40 40 0 0 0 56.9 89.4" stroke="#F2F6F8" stroke-opacity=".5" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="nf__code" aria-hidden="true">404</div>
+  </div>
+
+  <h1>This page doesn't exist.</h1>
+  <p>The link may be broken, or the page may have been moved. Let's get you back on track.</p>
+
+  <div class="nf__ar" lang="ar">
+    <h2>الصفحة غير موجودة</h2>
+    <p>ربما الرابط غير صحيح، أو تم نقل الصفحة. يمكنك العودة إلى الرئيسية.</p>
+  </div>
+
+  <div class="nf__cta">
+    <a class="btn btn--primary" href="/">Back to home</a>
+    <a class="btn btn--ghost" href="/ar/" lang="ar">العودة للرئيسية</a>
+  </div>
+</main>
+</body>
+</html>
